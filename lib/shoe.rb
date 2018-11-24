@@ -5,9 +5,10 @@ class Shoe
   BRANDS = []
 
   def initialize(brand)
-    @brand = []
-    @brand << brand
-    if brands.collect {|name| name!= brand}
+    @brand = brand
+    brands = []
+    brands << brand
+    if brands.each {|name| name!= brand}
       BRANDS << brand
     end
   end
@@ -16,4 +17,5 @@ class Shoe
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
+
 end
