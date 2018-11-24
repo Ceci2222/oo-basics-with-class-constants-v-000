@@ -6,20 +6,15 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-  end
-
-  def cobble
-    self.condition = "new"
-    puts "Your shoe is as good as new!"
-  end
-  
-  def brands=(brand)
     brands = []
     brands << brand
     if brands.each {|name| name!= brand}
       BRANDS << brand
     end
   end
-    
 
+  def cobble
+    self.condition = "new"
+    puts "Your shoe is as good as new!"
+  end
 end
