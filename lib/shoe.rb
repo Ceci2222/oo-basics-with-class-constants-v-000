@@ -5,9 +5,8 @@ class Shoe
   BRANDS = []
 
   def initialize(brand)
-    @brand = brand
-    brands = []
-    brands << brand
+    @brand = []
+    @brand << brand
     if brands.collect {|name| name!= brand}
       BRANDS << brand
     end
