@@ -3,10 +3,10 @@ class Shoe
   attr_reader :brand
   
   BRANDS = []
+  brands = []
 
   def initialize(brand)
     @brand = brand
-    brands = []
     brands << brand
     if brands.each {|name| name!= brand}
       BRANDS << brand
