@@ -8,7 +8,7 @@ class Shoe
     @brand = brand
     brands = []
     brands << brand
-    if brands.each {|name| name!= brand}
+    if brands.collect {|name| name!= brand}
       BRANDS << brand
     end
   end
