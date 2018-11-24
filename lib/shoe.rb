@@ -17,7 +17,7 @@ class Shoe
     brands = []
     brands << brand
     if brands.each {|name| name!= brand}
-      BRANDs << brand
+      BRANDS << brand
     end
   end
     
